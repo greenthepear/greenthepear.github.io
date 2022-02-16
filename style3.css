@@ -61,7 +61,7 @@ a:hover::before, a:active::before {
 }
 
 .sliding-background {
-	background: url("intermission.png") repeat;
+	background: url("bg.png") repeat;
 	height: 1080px;
 	width: 5760px;
 	animation: slide 60s linear infinite;
