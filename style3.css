@@ -1,0 +1,77 @@
+html, body {
+	margin: 0;
+}
+
+.container {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+  }
+
+.outer {
+	display: table;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: none;
+}
+
+.middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.inner {
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+.p1 {
+	font-style: italic;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #006B37;
+}
+
+a:hover, a:active {
+  	color: #009E4F;
+}
+
+a:hover::after, a:active::after {
+	content: " <";
+}
+
+a:hover::before, a:active::before {
+	content: "> ";
+}
+
+.sliding-background {
+	background: url("intermission.png") repeat;
+	height: 1080px;
+	width: 5760px;
+	animation: slide 60s linear infinite;
+  }
+  
+  @keyframes slide{
+	0% {
+	  transform: translate3d(0, 0, 0);
+	}
+	100% {
+	  transform: translate3d(-1920px, 0, 0);
+	}
+  }
