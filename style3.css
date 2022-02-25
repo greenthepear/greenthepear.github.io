@@ -1,3 +1,18 @@
+@font-face {
+	font-family: NotoBI;
+	src: url(NotoSerif-BoldItalic.ttf);
+}
+
+@font-face {
+	font-family: NotoI;
+	src: url(NotoSerif-Italic.ttf);
+}
+
+@font-face {
+	font-family: LatoR;
+	src: url(Lato-Regular.ttf);
+}
+
 html, body {
 	margin: 0;
 }
@@ -36,11 +51,16 @@ html, body {
 
 .p1 {
 	font-style: italic;
-	font-family: 'Times New Roman', Times, serif;
+	font-family: NotoBI, Times, serif;
+}
+
+.p2 {
+	font-style: italic;
+	font-family: NotoI, Times, serif;
 }
 
 a {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: LatoR, Helvetica, sans-serif;
 }
 
 a:link, a:visited {
