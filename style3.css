@@ -59,6 +59,13 @@ html, body {
 	font-family: NotoI, Times, serif;
 }
 
+.psec {
+	color: white;
+	font-size: 8px;
+	font-style: italic;
+	font-family: NotoI, Times, serif;
+}
+
 a {
 	font-family: LatoR, Helvetica, sans-serif;
 }
