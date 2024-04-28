@@ -1,16 +1,16 @@
 @font-face {
 	font-family: NotoBI;
-	src: url(NotoSerif-BoldItalic.ttf);
+	src: url(./NotoSerif-BoldItalic.ttf);
 }
 
 @font-face {
 	font-family: NotoI;
-	src: url(NotoSerif-Italic.ttf);
+	src: url(./NotoSerif-Italic.ttf);
 }
 
 @font-face {
 	font-family: LatoR;
-	src: url(Lato-Regular.ttf);
+	src: url(./Lato-Regular.ttf);
 }
 
 html, body {
@@ -24,7 +24,8 @@ html, body {
 	left: 0;
 	height: 100%;
 	width: 100%;
-  }
+	background-color: #009E4F;
+}
 
 .outer {
 	display: table;
@@ -50,20 +51,17 @@ html, body {
 }
 
 .p1 {
-	font-style: italic;
 	font-family: NotoBI, Times, serif;
 }
 
 .p2 {
-	font-style: italic;
 	font-family: NotoI, Times, serif;
+	margin-inline: 20px;
 }
 
-.psec {
-	color: white;
-	font-size: 8px;
-	font-style: italic;
-	font-family: NotoI, Times, serif;
+.boldgreen {
+	font-style: NotoBI, Times, serif;;
+	color: #006B37;
 }
 
 a {
@@ -86,19 +84,3 @@ a:hover::after, a:active::after {
 a:hover::before, a:active::before {
 	content: "> ";
 }
-
-.sliding-background {
-	background: url("bg.png") repeat;
-	height: 1080px;
-	width: 5760px;
-	animation: slide 60s linear infinite;
-  }
-  
-  @keyframes slide{
-	0% {
-	  transform: translate3d(0, 0, 0);
-	}
-	100% {
-	  transform: translate3d(-1920px, 0, 0);
-	}
-  }
