@@ -170,6 +170,7 @@ a {
   background-size: var(--s) var(--s);
 
   flex: 10%;
+  min-height: 10%;
 }
 
 .right {
